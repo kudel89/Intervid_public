@@ -222,7 +222,7 @@ a {
 
 /* WELCOME SECTION */
 .welcome-section {
-  background: url('../img/bg/welcome-section-bg.png') center right no-repeat;
+  background: url('../img/bg/bg-welcome-section.png') center right no-repeat;
 
   p.text-slogan {
     width: 100%;
@@ -862,6 +862,7 @@ footer {
     }
   }
 
+  /* WHO WE ARE */
   .whoweare-section {
     .advantages-block {
       margin: 80px 0 0 120px;
@@ -877,6 +878,24 @@ footer {
       li {
         font-size: 22px;
       }
+    }
+  }
+
+  /* WHAT WE DO */
+  .whatwedo-grid-item {
+    &:nth-child(3) {
+      background-color: var(--primary-color-700);
+    }
+
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(8) {
+      background-color: var(--primary-color-800);
+    }
+
+    &:nth-child(6),
+    &:nth-child(7) {
+      background-color: var(--primary-color-900);
     }
   }
 
@@ -1094,6 +1113,10 @@ footer {
   h2 {
     font-size: 36px;
     line-height: 36px;
+  }
+
+  section {
+    padding: 0 16px;
   }
 
   .text-slogan {
