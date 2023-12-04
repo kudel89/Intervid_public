@@ -76,6 +76,7 @@ header {
   justify-content: center;
   background-color: var(--background-dark);
   border-bottom: 2px solid var(--primary-color-800);
+  z-index: 100;
 
   .header-wrapper {
     max-width: 1200px;
@@ -103,7 +104,6 @@ header {
       height: 88px;
       display: flex;
       align-items: center;
-      color: var(--text-color-light);
       text-align: center;
       font-size: 18px;
       font-style: normal;
@@ -124,6 +124,10 @@ header {
     &.active {
       a {
         background-color: var(--accent-color);
+
+        &:hover {
+          color: var(--text-color-light);
+        }
       }
     }
   }
@@ -190,7 +194,6 @@ ul {
   display: flex;
   flex-flow: row wrap;
   list-style: none;
-  gap: 8px;
 }
 
 ul.sub-menu {
@@ -211,6 +214,19 @@ a {
 .description-block {
   margin: 32px 0 0 410px;
   width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+
+  &.left {
+    margin: 32px 410px 0 0;
+  }
+
+  p.description-block-subtitle {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 88px;
+    text-transform: uppercase;
+  }
 
   p.description-block-text {
     margin-top: 16px;
@@ -262,10 +278,9 @@ a {
   margin-bottom: 40px;
 
   .advantages-block {
-    margin-top: 80px;
+    margin: 48px 0 0 0;
     padding: 40px;
     width: 100%;
-    max-width: 800px;
     background-color: var(--primary-color-500);
   }
 
@@ -292,6 +307,7 @@ a {
 
 /* TEAM SECTION */
 .team-section {
+  margin-bottom: 80px;
   padding: 48px 0;
   background-color: var(--primary-color-900);
 
@@ -488,6 +504,7 @@ a.getonline-vibeo-btn {
 /* QUOTE SECTION */
 .quote-section {
   justify-content: center;
+  z-index: 1;
 
   .quote-section-wrapper {
     justify-content: center;
@@ -499,24 +516,16 @@ a.getonline-vibeo-btn {
     display: flex;
     flex-flow: row wrap;
 
-    p.quote-text-start,
-    p.quote-text-end {
+    .quote-text-start {
       position: absolute;
-      font-weight: 500;
-      font-size: 168px;
-      line-height: 1;
-      color: var(--primary-color-500);
+      left: 0;
+      top: -80px;
     }
 
-    p.quote-text-start {
-      left: -10px;
-      top: -100px;
-    }
-
-    p.quote-text-end {
-      right: -10px;
-      bottom: -50px;
-      transform: rotate(-180deg);
+    .quote-text-end {
+      position: absolute;
+      right: 0;
+      bottom: -30px;
     }
 
     .quote-text {
@@ -767,10 +776,10 @@ footer {
     margin: 16px 125px 16px 0;
   }
 
-  ul {
+  ul.footer-menu {
     gap: 32px;
 
-    li {
+    li.footer-menu-item {
       a {
         padding: 10px;
         display: flex;
@@ -851,6 +860,10 @@ footer {
   .description-block {
     margin: 16px 0 0 0;
 
+    &.left {
+      margin: 16px 0 0 0;
+    }
+
     p.description-block-text {
       margin-right: 120px;
       font-size: 20px;
@@ -865,9 +878,8 @@ footer {
   /* WHO WE ARE */
   .whoweare-section {
     .advantages-block {
-      margin: 80px 0 0 120px;
+      margin: 48px 0 0 120px;
       padding: 32px;
-      max-width: none;
 
       p.advantages-title {
         font-size: 40px;
@@ -901,15 +913,16 @@ footer {
 
   /* TEAM SECTION */
   .team-section {
+    margin-bottom: 64px;
     padding: 32px 0;
 
     .team-section-wrapper .team-card {
       grid-template-columns: 1fr;
-      justify-self: center;
       text-align: center;
       gap: 0;
 
       .team-member-photo {
+        margin: 0 auto;
         max-width: 142px;
       }
 
@@ -977,8 +990,10 @@ footer {
   }
 
   /* QUOTE */
-  .quote-section blockquote .quote-text {
-    font-size: 22px;
+  .quote-section blockquote {
+    .quote-text {
+      font-size: 22px;
+    }
   }
 
   /* BECOME */
@@ -1060,6 +1075,8 @@ footer {
 
   /* TEAM SECTION */
   .team-section {
+    margin-bottom: 24px;
+
     .team-section-wrapper {
       grid-template-columns: 1fr;
       gap: 40px;
@@ -1090,7 +1107,7 @@ footer {
         order: 1;
       }
 
-      ul {
+      ul.footer-menu {
         flex: 1 1 100%;
         justify-content: center;
         order: 3;
@@ -1119,9 +1136,45 @@ footer {
     padding: 0 16px;
   }
 
-  .text-slogan {
-    font-size: 14px;
-    letter-spacing: 1.82px;
+  header {
+    min-height: 64px;
+
+    .header-wrapper {
+      align-items: center;
+    }
+
+    .header-logo {
+      margin: 16px;
+
+      img {
+        width: auto;
+        height: 32px;
+      }
+    }
+
+    .toggle-lang {
+      margin: 0 16px 0 auto;
+      font-size: 14px;
+    }
+  }
+
+  main {
+    padding: 64px 0 0;
+  }
+
+  .welcome-section {
+    p.text-slogan {
+      font-size: 14px;
+      letter-spacing: 1.82px;
+    }
+
+    a.btn-contact-us {
+      margin-top: 32px;
+      padding: 10px 40px;
+      min-height: 40px;
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 
   .wrapper {
@@ -1177,28 +1230,35 @@ footer {
   }
 
   /* QUOTE */
-  .quote-section blockquote .quote-text {
-    font-size: 16px;
-  }
+  .quote-section blockquote {
+    .quote-text-start {
+      width: 27px;
+      height: auto;
+      top: -30px;
+    }
 
-  .quote-section blockquote .quote-author-block p.quote-author-name {
-    font-size: 14px;
-  }
+    .quote-text-end {
+      width: 27px;
+      height: auto;
+      bottom: 5px;
+    }
 
-  .quote-section blockquote .quote-author-block img.quote-author-avatar {
-    height: 24px;
-    width: 24px;
-  }
+    .quote-text {
+      font-size: 16px;
+    }
 
-  .quote-section blockquote p.quote-text-end,
-  .quote-section blockquote p.quote-text-start {
-    font-size: 120px;
-  }
-  .quote-section blockquote p.quote-text-start {
-    top: -55px;
-  }
-  .quote-section blockquote p.quote-text-end {
-    bottom: 0;
+    .quote-author-block {
+      margin: 8px 52px 0 auto;
+
+      p.quote-author-name {
+        font-size: 14px;
+      }
+
+      img.quote-author-avatar {
+        height: 24px;
+        width: 24px;
+      }
+    }
   }
 
   /* BECOME */
@@ -1259,6 +1319,29 @@ footer {
 
   .description-block {
     margin: 8px 0 0;
+
+    p.description-block-text {
+      margin-right: 60px;
+      font-size: 16px;
+    }
+  }
+
+  /* WHO WE ARE */
+  .whoweare-section {
+    .advantages-block {
+      margin: 48px 0 0 60px;
+      padding: 16px;
+
+      p.advantages-title {
+        font-size: 28px;
+      }
+    }
+
+    ul.advantages-list {
+      li {
+        font-size: 16px;
+      }
+    }
   }
 
   .contact-block-title {
@@ -1282,17 +1365,20 @@ footer {
   }
 
   footer {
+    padding: 48px 20px 32px;
+
     .footer-wrapper {
       .footer-logo {
+        margin: 0 0 16px 0;
         flex: 0 0 127px;
       }
 
-      ul {
+      ul.footer-menu {
         padding-bottom: 22px;
         justify-content: flex-start;
         gap: 0;
 
-        li {
+        li.footer-menu-item {
           flex: 0 0 50%;
           align-items: center;
 

@@ -82,6 +82,7 @@ header {
           justify-content: center;
   background-color: var(--background-dark);
   border-bottom: 2px solid var(--primary-color-800);
+  z-index: 100;
 }
 header .header-wrapper {
   max-width: 1200px;
@@ -116,7 +117,6 @@ header ul > li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: var(--text-color-light);
   text-align: center;
   font-size: 18px;
   font-style: normal;
@@ -134,6 +134,9 @@ header ul > li:hover:not(.active) a {
 }
 header ul > li.active a {
   background-color: var(--accent-color);
+}
+header ul > li.active a:hover {
+  color: var(--text-color-light);
 }
 
 main {
@@ -223,7 +226,6 @@ ul {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
   list-style: none;
-  gap: 8px;
 }
 
 ul.sub-menu {
@@ -245,6 +247,22 @@ a:hover {
 .description-block {
   margin: 32px 0 0 410px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+.description-block.left {
+  margin: 32px 410px 0 0;
+}
+.description-block p.description-block-subtitle {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 88px;
+  text-transform: uppercase;
 }
 .description-block p.description-block-text {
   margin-top: 16px;
@@ -300,10 +318,9 @@ a:hover {
   margin-bottom: 40px;
 }
 .whoweare-section .advantages-block {
-  margin-top: 80px;
+  margin: 48px 0 0 0;
   padding: 40px;
   width: 100%;
-  max-width: 800px;
   background-color: var(--primary-color-500);
 }
 .whoweare-section p.advantages-title {
@@ -331,6 +348,7 @@ a:hover {
 
 /* TEAM SECTION */
 .team-section {
+  margin-bottom: 80px;
   padding: 48px 0;
   background-color: var(--primary-color-900);
 }
@@ -549,6 +567,7 @@ a.getonline-vibeo-btn:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 1;
 }
 .quote-section .quote-section-wrapper {
   -webkit-box-pack: center;
@@ -566,23 +585,15 @@ a.getonline-vibeo-btn:hover {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
 }
-.quote-section blockquote p.quote-text-start,
-.quote-section blockquote p.quote-text-end {
+.quote-section blockquote .quote-text-start {
   position: absolute;
-  font-weight: 500;
-  font-size: 168px;
-  line-height: 1;
-  color: var(--primary-color-500);
+  left: 0;
+  top: -80px;
 }
-.quote-section blockquote p.quote-text-start {
-  left: -10px;
-  top: -100px;
-}
-.quote-section blockquote p.quote-text-end {
-  right: -10px;
-  bottom: -50px;
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
+.quote-section blockquote .quote-text-end {
+  position: absolute;
+  right: 0;
+  bottom: -30px;
 }
 .quote-section blockquote .quote-text {
   display: -webkit-box;
@@ -892,10 +903,10 @@ footer .footer-wrapper {
 footer .footer-logo {
   margin: 16px 125px 16px 0;
 }
-footer ul {
+footer ul.footer-menu {
   gap: 32px;
 }
-footer ul li a {
+footer ul.footer-menu li.footer-menu-item a {
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -914,11 +925,11 @@ footer ul li a {
   -webkit-transition: color 0.3s, background-color 0.2s;
   transition: color 0.3s, background-color 0.2s;
 }
-footer ul li a:hover {
+footer ul.footer-menu li.footer-menu-item a:hover {
   cursor: pointer;
   color: var(--accent-color);
 }
-footer ul li a.social-item {
+footer ul.footer-menu li.footer-menu-item a.social-item {
   display: none;
 }
 footer .social-block {
@@ -978,6 +989,9 @@ footer p.copyright {
   .description-block {
     margin: 16px 0 0 0;
   }
+  .description-block.left {
+    margin: 16px 0 0 0;
+  }
   .description-block p.description-block-text {
     margin-right: 120px;
     font-size: 20px;
@@ -989,9 +1003,8 @@ footer p.copyright {
 
   /* WHO WE ARE */
   .whoweare-section .advantages-block {
-    margin: 80px 0 0 120px;
+    margin: 48px 0 0 120px;
     padding: 32px;
-    max-width: none;
   }
   .whoweare-section .advantages-block p.advantages-title {
     font-size: 40px;
@@ -1013,15 +1026,16 @@ footer p.copyright {
 
   /* TEAM SECTION */
   .team-section {
+    margin-bottom: 64px;
     padding: 32px 0;
   }
   .team-section .team-section-wrapper .team-card {
     grid-template-columns: 1fr;
-    justify-self: center;
     text-align: center;
     gap: 0;
   }
   .team-section .team-section-wrapper .team-card .team-member-photo {
+    margin: 0 auto;
     max-width: 142px;
   }
   .team-section .team-section-wrapper .team-card .team-member-contacts {
@@ -1163,6 +1177,9 @@ footer p.copyright {
   }
 
   /* TEAM SECTION */
+  .team-section {
+    margin-bottom: 24px;
+  }
   .team-section .team-section-wrapper {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -1185,7 +1202,7 @@ footer p.copyright {
         -ms-flex-order: 1;
             order: 1;
   }
-  footer .footer-wrapper ul {
+  footer .footer-wrapper ul.footer-menu {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
@@ -1218,9 +1235,40 @@ footer p.copyright {
     padding: 0 16px;
   }
 
-  .text-slogan {
+  header {
+    min-height: 64px;
+  }
+  header .header-wrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .header-logo {
+    margin: 16px;
+  }
+  header .header-logo img {
+    width: auto;
+    height: 32px;
+  }
+  header .toggle-lang {
+    margin: 0 16px 0 auto;
+    font-size: 14px;
+  }
+
+  main {
+    padding: 64px 0 0;
+  }
+
+  .welcome-section p.text-slogan {
     font-size: 14px;
     letter-spacing: 1.82px;
+  }
+  .welcome-section a.btn-contact-us {
+    margin-top: 32px;
+    padding: 10px 40px;
+    min-height: 40px;
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .wrapper {
@@ -1269,30 +1317,28 @@ footer p.copyright {
   }
 
   /* QUOTE */
+  .quote-section blockquote .quote-text-start {
+    width: 27px;
+    height: auto;
+    top: -30px;
+  }
+  .quote-section blockquote .quote-text-end {
+    width: 27px;
+    height: auto;
+    bottom: 5px;
+  }
   .quote-section blockquote .quote-text {
     font-size: 16px;
   }
-
+  .quote-section blockquote .quote-author-block {
+    margin: 8px 52px 0 auto;
+  }
   .quote-section blockquote .quote-author-block p.quote-author-name {
     font-size: 14px;
   }
-
   .quote-section blockquote .quote-author-block img.quote-author-avatar {
     height: 24px;
     width: 24px;
-  }
-
-  .quote-section blockquote p.quote-text-end,
-  .quote-section blockquote p.quote-text-start {
-    font-size: 120px;
-  }
-
-  .quote-section blockquote p.quote-text-start {
-    top: -55px;
-  }
-
-  .quote-section blockquote p.quote-text-end {
-    bottom: 0;
   }
 
   /* BECOME */
@@ -1346,6 +1392,22 @@ footer p.copyright {
   .description-block {
     margin: 8px 0 0;
   }
+  .description-block p.description-block-text {
+    margin-right: 60px;
+    font-size: 16px;
+  }
+
+  /* WHO WE ARE */
+  .whoweare-section .advantages-block {
+    margin: 48px 0 0 60px;
+    padding: 16px;
+  }
+  .whoweare-section .advantages-block p.advantages-title {
+    font-size: 28px;
+  }
+  .whoweare-section ul.advantages-list li {
+    font-size: 16px;
+  }
 
   .contact-block-title {
     font-size: 16px;
@@ -1367,19 +1429,23 @@ footer p.copyright {
     line-height: 20px;
   }
 
+  footer {
+    padding: 48px 20px 32px;
+  }
   footer .footer-wrapper .footer-logo {
+    margin: 0 0 16px 0;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 127px;
             flex: 0 0 127px;
   }
-  footer .footer-wrapper ul {
+  footer .footer-wrapper ul.footer-menu {
     padding-bottom: 22px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     gap: 0;
   }
-  footer .footer-wrapper ul li {
+  footer .footer-wrapper ul.footer-menu li.footer-menu-item {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
@@ -1387,36 +1453,36 @@ footer p.copyright {
         -ms-flex-align: center;
             align-items: center;
   }
-  footer .footer-wrapper ul li a {
+  footer .footer-wrapper ul.footer-menu li.footer-menu-item a {
     margin: 12px 12px 12px 0;
     padding: 0;
   }
-  footer .footer-wrapper ul li:nth-child(1) {
+  footer .footer-wrapper ul.footer-menu li.footer-menu-item:nth-child(1) {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
-  footer .footer-wrapper ul li:nth-child(2) {
+  footer .footer-wrapper ul.footer-menu li.footer-menu-item:nth-child(2) {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
   }
-  footer .footer-wrapper ul li:nth-child(3) {
+  footer .footer-wrapper ul.footer-menu li.footer-menu-item:nth-child(3) {
     -webkit-box-ordinal-group: 6;
         -ms-flex-order: 5;
             order: 5;
   }
-  footer .footer-wrapper ul li:nth-child(4) {
+  footer .footer-wrapper ul.footer-menu li.footer-menu-item:nth-child(4) {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
   }
-  footer .footer-wrapper ul li:nth-child(5) {
+  footer .footer-wrapper ul.footer-menu li.footer-menu-item:nth-child(5) {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
   }
-  footer .footer-wrapper ul li.social-item {
+  footer .footer-wrapper ul.footer-menu li.footer-menu-item.social-item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1424,11 +1490,11 @@ footer p.copyright {
         -ms-flex-order: 6;
             order: 6;
   }
-  footer .footer-wrapper ul li.social-item a {
+  footer .footer-wrapper ul.footer-menu li.footer-menu-item.social-item a {
     margin: 0;
     height: 24px;
   }
-  footer .footer-wrapper ul li.social-item a img {
+  footer .footer-wrapper ul.footer-menu li.footer-menu-item.social-item a img {
     height: 24px;
   }
   footer .footer-wrapper .social-block {
