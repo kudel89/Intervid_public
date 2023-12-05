@@ -73,21 +73,25 @@ header {
   min-height: 88px;
   width: 100%;
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   background-color: var(--background-dark);
   border-bottom: 2px solid var(--primary-color-800);
   z-index: 100;
 
   .header-wrapper {
+    min-height: 88px;
     max-width: 1200px;
+    width: 100%;
     display: flex;
     flex: 1 1 100%;
     justify-content: space-between;
     align-items: flex-end;
+    overflow: hidden;
   }
 
   .header-logo {
-    margin: 16px 125px 16px 0;
+    margin: 16px 125px 16px 8px;
   }
 
   .toggle-lang {
@@ -98,8 +102,8 @@ header {
     display: none;
   }
 
-  ul > li {
-    a {
+  ul.menu > li.menu-item {
+    a.menu-item-btn {
       padding: 34px 24px 16px 24px;
       height: 88px;
       display: flex;
@@ -115,19 +119,53 @@ header {
     }
 
     &:hover:not(.active) {
-      a {
+      a.menu-item-btn {
         color: var(--accent-color);
         background-color: var(--text-color-light);
       }
     }
 
     &.active {
-      a {
+      a.menu-item-btn {
         background-color: var(--accent-color);
 
         &:hover {
           color: var(--text-color-light);
         }
+      }
+    }
+  }
+
+  .dropdown:hover .sub-menu-cover {
+    display: flex;
+  }
+
+  .sub-menu-cover {
+    position: absolute;
+    left: 0;
+    top: 88px;
+    width: 100%;
+    display: none;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: var(--background-dark);
+    border-bottom: 2px solid var(--primary-color-800);
+    z-index: 200;
+    overflow: hidden;
+
+    ul.sub-menu {
+      padding: 16px 0;
+      max-width: 1200px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      border-top: 1px solid var(--accent-color);
+
+      li.sub-menu-item {
+        padding: 16px 24px;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;
       }
     }
   }
@@ -194,10 +232,6 @@ ul {
   display: flex;
   flex-flow: row wrap;
   list-style: none;
-}
-
-ul.sub-menu {
-  display: none;
 }
 
 a {
@@ -1127,6 +1161,12 @@ footer {
 
 /* Small devices (landscape phones, less than 768px) */
 @media screen and (max-width: 767.98px) {
+  // Temporary
+  .navbar {
+    display: none;
+  }
+  // Temporary
+
   h1 {
     font-size: 56px;
     line-height: 56px;
