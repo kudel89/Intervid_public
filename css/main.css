@@ -992,6 +992,10 @@ footer p.copyright {
   .description-block.left {
     margin: 16px 0 0 0;
   }
+  .description-block p.description-block-subtitle {
+    font-size: 40px;
+    line-height: 145%;
+  }
   .description-block p.description-block-text {
     margin-right: 120px;
     font-size: 20px;
@@ -1391,6 +1395,9 @@ footer p.copyright {
 
   .description-block {
     margin: 8px 0 0;
+  }
+  .description-block p.description-block-subtitle {
+    font-size: 28px;
   }
   .description-block p.description-block-text {
     margin-right: 60px;
