@@ -1573,7 +1573,7 @@ footer p.copyright {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url("../img/bg/bg-services.png") center right no-repeat;
+  background: url("../img/bg/bg-services.png") top right no-repeat;
 }
 .services-section.service-shipping {
   background: url("../img/bg/bg-services-shipping.png") center right no-repeat;
