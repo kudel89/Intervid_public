@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Helvetica Neue';
+  font-family: 'Helvetica';
   src: url('../fonts/HelveticaNeueCyr-Medium.eot');
   src: local('Helvetica'), url('../fonts/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
     url('../fonts/HelveticaNeueCyr-Medium.woff2') format('woff2'),
@@ -10,7 +10,7 @@
 }
 
 @font-face {
-  font-family: 'Helvetica Neue';
+  font-family: 'Helvetica';
   src: url('../fonts/HelveticaNeueCyr-Light.eot');
   src: local('Helvetica'), url('../fonts/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
     url('../fonts/HelveticaNeueCyr-Light.woff2') format('woff2'),
@@ -21,7 +21,7 @@
 }
 
 @font-face {
-  font-family: 'Helvetica Neue';
+  font-family: 'Helvetica';
   src: url('../fonts/HelveticaNeueCyr-Bold.eot');
   src: local('Helvetica'), url('../fonts/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
     url('../fonts/HelveticaNeueCyr-Bold.woff2') format('woff2'),
@@ -60,7 +60,7 @@ body {
   flex-flow: row wrap;
   justify-content: center;
   align-content: space-between;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Helvetica', Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: var(--text-color-light);
