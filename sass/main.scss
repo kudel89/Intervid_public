@@ -1,7 +1,7 @@
 @font-face {
-  font-family: 'Helvetica';
+  font-family: 'Helvetica Neue';
   src: url('../fonts/HelveticaNeueCyr-Medium.eot');
-  src: local('Helvetica'), url('../fonts/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+  src: local('Helvetica Neue'), url('../fonts/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
     url('../fonts/HelveticaNeueCyr-Medium.woff2') format('woff2'),
     url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'),
     url('../fonts/HelveticaNeueCyr-Medium.ttf') format('truetype');
@@ -10,7 +10,7 @@
 }
 
 @font-face {
-  font-family: 'Helvetica';
+  font-family: 'Helvetica Neue';
   src: url('../fonts/HelveticaNeueCyr-Light.eot');
   src: local('Helvetica'), url('../fonts/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
     url('../fonts/HelveticaNeueCyr-Light.woff2') format('woff2'),
@@ -21,9 +21,9 @@
 }
 
 @font-face {
-  font-family: 'Helvetica';
+  font-family: 'Helvetica Neue';
   src: url('../fonts/HelveticaNeueCyr-Bold.eot');
-  src: local('Helvetica'), url('../fonts/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
+  src: local('Helvetica Neue'), url('../fonts/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
     url('../fonts/HelveticaNeueCyr-Bold.woff2') format('woff2'),
     url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff'),
     url('../fonts/HelveticaNeueCyr-Bold.ttf') format('truetype');
@@ -60,7 +60,7 @@ body {
   flex-flow: row wrap;
   justify-content: center;
   align-content: space-between;
-  font-family: 'Helvetica', Arial, sans-serif;
+  font-family: -apple-system, -apple-system, 'Helvetica Neue', Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: var(--text-color-light);
