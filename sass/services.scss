@@ -1,26 +1,40 @@
-@import './main.scss';
-
-:root {
-  --primary-color-500: #3f873b;
-  --primary-color-600: #2d5837;
-  --primary-color-700: #244035;
-  --primary-color-800: #203634;
-  --primary-color-900: #1e3234;
-  --background-dark: #1a2833;
-  --text-color: #abb0b4;
-  --text-color-light: #e9eaeb;
-  --accent-color: #255cf5;
-}
-
 // SERVICES
 .services-section {
-  margin-bottom: 80px;
   min-height: 560px;
+  max-width: 1440px;
   align-items: center;
   background: url('../img/bg/bg-services.png') top right no-repeat;
 
   &.service-shipping {
-    background: url('../img/bg/bg-services-shipping.png') center right no-repeat;
+    background: url('../img/bg/bg-service-shipping.png') center right no-repeat;
+  }
+
+  &.service-container {
+    background: url('../img/bg/bg-service-container.png') center right no-repeat;
+  }
+
+  &.service-international {
+    background: url('../img/bg/bg-service-international.png') center right no-repeat;
+  }
+
+  &.service-hazardous {
+    background: url('../img/bg/bg-service-hazardous.png') center right no-repeat;
+  }
+
+  &.service-oversized {
+    background: url('../img/bg/bg-service-oversized.png') center right no-repeat;
+  }
+
+  &.service-warehouse {
+    background: url('../img/bg/bg-service-warehouse.png') center right no-repeat;
+  }
+
+  &.service-customs {
+    background: url('../img/bg/bg-service-customs.png') center right no-repeat;
+  }
+
+  &.service-forwarding {
+    background: url('../img/bg/bg-service-forwarding.png') center right no-repeat;
   }
 }
 
@@ -35,15 +49,21 @@
   display: none;
 }
 
+.section-p40 {
+  padding: 40px 20px;
+}
+
 .more-for-you-title {
-  margin-bottom: 80px;
+  margin-bottom: 76px;
 }
 
 .service-details-left {
+  padding: 40px 20px;
   background: url('../img/bg/bg-service-details.png') center right no-repeat;
 }
 
 .service-details-right {
+  padding: 40px 20px;
   background: url('../img/bg/bg-service-details-second.png') center left no-repeat;
 }
 
@@ -206,25 +226,31 @@
 @media screen and (max-width: 1200px) {
   // SERVICES
   .services-section {
-    margin: 0;
     min-height: auto;
     background: none;
 
-    &.service-shipping {
+    &.service-shipping,
+    &.service-container,
+    &.service-international,
+    &.service-hazardous,
+    &.service-oversized,
+    &.service-warehouse,
+    &.service-customs,
+    &.service-forwarding {
       background: none;
-    }
-
-    .wrapper {
-      margin: 48px 0 32px;
     }
   }
 
   .services-img-top {
-    margin: 70px auto 0;
+    margin: 80px auto 0;
     width: auto;
     height: auto;
     max-height: 384px;
     display: block;
+  }
+
+  .section-p40 {
+    padding: 40px;
   }
 
   .service-details-img {
@@ -344,13 +370,13 @@
 /* Small devices (landscape phones, less than 768px) */
 @media screen and (max-width: 767.98px) {
   // SERVICES
-  .services-section .wrapper {
-    margin: 16px 0 24px;
-  }
-
   .services-title {
     font-size: 40px;
     line-height: 48px;
+  }
+
+  .services-img-top {
+    margin: 40px auto 0;
   }
 
   .details-block-left,

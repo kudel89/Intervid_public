@@ -49,7 +49,6 @@ html {
 body {
   min-height: 100%;
   width: 100%;
-  max-width: 1440px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -249,7 +248,6 @@ header {
 
 main {
   padding: 88px 0 0;
-  max-width: 1440px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -266,8 +264,34 @@ main {
           justify-content: center;
 }
 
+.cover-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
 section {
-  padding: 0 20px;
+  padding: 56px 20px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -279,19 +303,6 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.wrapper {
-  margin: 80px 0;
-  max-width: 1200px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
 }
 
 h1 {
@@ -308,6 +319,7 @@ h1 span {
 }
 
 h2 {
+  margin-bottom: 32px;
   width: 100%;
   font-weight: 700;
   font-size: 88px;
@@ -349,7 +361,7 @@ a:hover {
 }
 
 .description-block {
-  margin: 32px 0 0 410px;
+  padding-left: 410px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -360,7 +372,7 @@ a:hover {
           flex-flow: row wrap;
 }
 .description-block.left {
-  margin: 32px 410px 0 0;
+  padding: 0 410px 0 0;
 }
 .description-block p.description-block-subtitle {
   font-weight: 700;
@@ -369,14 +381,18 @@ a:hover {
   text-transform: uppercase;
 }
 .description-block p.description-block-text {
-  margin-top: 16px;
+  margin-bottom: 16px;
   font-size: 22px;
   font-weight: 400;
   line-height: 145%;
 }
+.description-block p.description-block-text:last-child {
+  margin-bottom: 0;
+}
 
 /* WELCOME SECTION */
 .welcome-section {
+  max-width: 1440px;
   background: url("../img/bg/bg-welcome-section.png") center right no-repeat;
 }
 .welcome-section p.text-slogan {
@@ -454,6 +470,7 @@ a:hover {
 .team-section {
   margin-bottom: 80px;
   padding: 48px 0;
+  max-width: 1440px;
   background-color: var(--primary-color-900);
 }
 .team-section .team-section-wrapper {
@@ -968,7 +985,6 @@ a.contact-block-button:hover {
 /* FOOTER */
 footer {
   padding: 56px 20px 32px;
-  max-width: 1200px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -986,6 +1002,7 @@ footer {
 }
 footer .footer-wrapper {
   width: 100%;
+  max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1076,11 +1093,7 @@ footer p.copyright {
   }
 
   section {
-    padding: 0 40px;
-  }
-
-  .wrapper {
-    margin: 48px 0;
+    padding: 56px 40px;
   }
 
   .nav-logo {
@@ -1243,10 +1256,10 @@ footer p.copyright {
   }
 
   .description-block {
-    margin: 16px 0 0 0;
+    padding: 16px 0 0 0;
   }
   .description-block.left {
-    margin: 16px 0 0 0;
+    padding: 16px 0 0 0;
   }
   .description-block p.description-block-subtitle {
     font-size: 40px;
@@ -1546,8 +1559,8 @@ footer p.copyright {
     line-height: 20px;
   }
 
-  .wrapper {
-    margin: 32px 0;
+  section {
+    padding: 28px 16px;
   }
 
   /* WHAT WE DO */
@@ -1665,7 +1678,7 @@ footer p.copyright {
   }
 
   .description-block {
-    margin: 8px 0 0;
+    padding: 8px 0 0;
   }
   .description-block p.description-block-subtitle {
     font-size: 28px;

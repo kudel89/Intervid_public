@@ -55,7 +55,6 @@ html {
 body {
   min-height: 100%;
   width: 100%;
-  max-width: 1440px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -223,7 +222,6 @@ header {
 
 main {
   padding: 88px 0 0;
-  max-width: 1440px;
   width: 100%;
   display: flex;
   flex: 1 1 100%;
@@ -231,20 +229,26 @@ main {
   justify-content: center;
 }
 
-section {
-  padding: 0 20px;
-  width: 100%;
+.cover-wrapper {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  width: 100%;
 }
 
 .wrapper {
-  margin: 80px 0;
   max-width: 1200px;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
+}
+
+section {
+  padding: 56px 20px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 h1 {
@@ -260,6 +264,7 @@ h1 {
 }
 
 h2 {
+  margin-bottom: 32px;
   width: 100%;
   font-weight: 700;
   font-size: 88px;
@@ -296,13 +301,13 @@ a {
 }
 
 .description-block {
-  margin: 32px 0 0 410px;
+  padding-left: 410px;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
 
   &.left {
-    margin: 32px 410px 0 0;
+    padding: 0 410px 0 0;
   }
 
   p.description-block-subtitle {
@@ -313,15 +318,20 @@ a {
   }
 
   p.description-block-text {
-    margin-top: 16px;
+    margin-bottom: 16px;
     font-size: 22px;
     font-weight: 400;
     line-height: 145%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
 /* WELCOME SECTION */
 .welcome-section {
+  max-width: 1440px;
   background: url('../img/bg/bg-welcome-section.png') center right no-repeat;
 
   p.text-slogan {
@@ -393,6 +403,7 @@ a {
 .team-section {
   margin-bottom: 80px;
   padding: 48px 0;
+  max-width: 1440px;
   background-color: var(--primary-color-900);
 
   .team-section-wrapper {
@@ -839,7 +850,6 @@ a.contact-block-button {
 /* FOOTER */
 footer {
   padding: 56px 20px 32px;
-  max-width: 1200px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -848,6 +858,7 @@ footer {
 
   .footer-wrapper {
     width: 100%;
+    max-width: 1200px;
     display: flex;
     flex: 1 1 100%;
     flex-flow: row wrap;
@@ -926,11 +937,7 @@ footer {
   }
 
   section {
-    padding: 0 40px;
-  }
-
-  .wrapper {
-    margin: 48px 0;
+    padding: 56px 40px;
   }
 
   // TOP NAV
@@ -1088,10 +1095,10 @@ footer {
   }
 
   .description-block {
-    margin: 16px 0 0 0;
+    padding: 16px 0 0 0;
 
     &.left {
-      margin: 16px 0 0 0;
+      padding: 16px 0 0 0;
     }
 
     p.description-block-subtitle {
@@ -1424,8 +1431,8 @@ footer {
     }
   }
 
-  .wrapper {
-    margin: 32px 0;
+  section {
+    padding: 28px 16px;
   }
 
   /* WHAT WE DO */
@@ -1565,7 +1572,7 @@ footer {
   }
 
   .description-block {
-    margin: 8px 0 0;
+    padding: 8px 0 0;
 
     p.description-block-subtitle {
       font-size: 28px;
