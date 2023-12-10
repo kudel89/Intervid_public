@@ -1,34 +1,121 @@
-.services-section {
+:root {
+  --primary-color-500: #3f873b;
+  --primary-color-600: #2d5837;
+  --primary-color-700: #244035;
+  --primary-color-800: #203634;
+  --primary-color-900: #1e3234;
+  --background-dark: #1a2833;
+  --text-color: #abb0b4;
+  --text-color-light: #e9eaeb;
+  --text-color-grey: #747b81;
+  --accent-color: #255cf5;
+}
+
+.section-top {
   min-height: 560px;
-  max-width: 1440px;
+  max-width: 1920px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   background: url("../img/bg/bg-services.png") top right no-repeat;
 }
-.services-section.service-shipping {
+.section-top.service-shipping {
   background: url("../img/bg/bg-service-shipping.png") center right no-repeat;
 }
-.services-section.service-container {
+.section-top.service-container {
   background: url("../img/bg/bg-service-container.png") center right no-repeat;
 }
-.services-section.service-international {
+.section-top.service-international {
   background: url("../img/bg/bg-service-international.png") center right no-repeat;
 }
-.services-section.service-hazardous {
+.section-top.service-hazardous {
   background: url("../img/bg/bg-service-hazardous.png") center right no-repeat;
 }
-.services-section.service-oversized {
+.section-top.service-oversized {
   background: url("../img/bg/bg-service-oversized.png") center right no-repeat;
 }
-.services-section.service-warehouse {
+.section-top.service-warehouse {
   background: url("../img/bg/bg-service-warehouse.png") center right no-repeat;
 }
-.services-section.service-customs {
+.section-top.service-customs {
   background: url("../img/bg/bg-service-customs.png") center right no-repeat;
 }
-.services-section.service-forwarding {
+.section-top.service-forwarding {
   background: url("../img/bg/bg-service-forwarding.png") center right no-repeat;
+}
+.section-top.contact {
+  background: url("../img/bg/bg-contact.png") center right no-repeat;
+}
+.section-top.help {
+  background: none;
+}
+
+.help h1 {
+  text-align: center;
+}
+.help p.text-slogan {
+  margin: 48px 0 32px;
+  text-align: center;
+}
+.help .btn-contact-us {
+  margin: 0 auto;
+}
+
+.topics-block {
+  gap: 24px;
+  list-style-image: none;
+}
+.topics-block .topic {
+  padding: 12px 16px 0 72px;
+  width: 100%;
+  background: url(../img/list-style-star.svg) left top no-repeat;
+}
+.topics-block .topic-btn {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 125%;
+  text-transform: uppercase;
+}
+.topics-block .topic-date {
+  margin-top: 4px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  color: var(--text-color-grey);
+}
+.topics-block .topic-btn-view {
+  display: block;
+}
+
+.news-block {
+  gap: 24px;
+  list-style-image: none;
+}
+.news-block .news {
+  padding: 8px 0;
+  width: 100%;
+}
+.news-block .news-btn {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 125%;
+  text-transform: uppercase;
+}
+.news-block .news-description {
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 125%;
+}
+.news-block .news-date {
+  margin-top: 4px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  color: var(--text-color-grey);
+}
+.news-block .news-date span {
+  margin-left: 12px;
 }
 
 .services-title {
@@ -51,11 +138,13 @@
 }
 
 .service-details-left {
+  max-width: 1920px;
   padding: 40px 20px;
   background: url("../img/bg/bg-service-details.png") center right no-repeat;
 }
 
 .service-details-right {
+  max-width: 1920px;
   padding: 40px 20px;
   background: url("../img/bg/bg-service-details-second.png") center left no-repeat;
 }
@@ -202,13 +291,15 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-.notify-block p.notify-block-text {
+
+p.notify-block-text {
   font-weight: 700;
   font-size: 22px;
   line-height: 134%;
   color: var(--primary-color-500);
 }
-.notify-block a.notify-block-btn {
+
+a.notify-block-btn {
   display: none;
   padding: 10px 24px;
   font-weight: 700;
@@ -219,13 +310,17 @@
   background-color: var(--text-color-light);
 }
 
+a.btn-view-all {
+  display: block;
+}
+
 /* Large devices (desktops, less than 1200px) */
 @media screen and (max-width: 1200px) {
-  .services-section {
+  .section-top {
     min-height: auto;
     background: none;
   }
-  .services-section.service-shipping, .services-section.service-container, .services-section.service-international, .services-section.service-hazardous, .services-section.service-oversized, .services-section.service-warehouse, .services-section.service-customs, .services-section.service-forwarding {
+  .section-top.service-shipping, .section-top.service-container, .section-top.service-international, .section-top.service-hazardous, .section-top.service-oversized, .section-top.service-warehouse, .section-top.service-customs, .section-top.service-forwarding, .section-top.contact {
     background: none;
   }
 
@@ -330,11 +425,13 @@
   .notify-block {
     margin: 40px 120px 8px;
   }
-  .notify-block p.notify-block-text {
+
+  p.notify-block-text {
     display: none;
     font-size: 18px;
   }
-  .notify-block a.notify-block-btn {
+
+  a.notify-block-btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -408,10 +505,12 @@
   .notify-block {
     margin: 40px 32px 8px;
   }
-  .notify-block p.notify-block-text {
+
+  p.notify-block-text {
     font-size: 14px;
   }
-  .notify-block a.notify-block-btn {
+
+  a.notify-block-btn {
     font-size: 14px;
   }
 }

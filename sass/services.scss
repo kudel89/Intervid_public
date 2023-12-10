@@ -1,7 +1,20 @@
+:root {
+  --primary-color-500: #3f873b;
+  --primary-color-600: #2d5837;
+  --primary-color-700: #244035;
+  --primary-color-800: #203634;
+  --primary-color-900: #1e3234;
+  --background-dark: #1a2833;
+  --text-color: #abb0b4;
+  --text-color-light: #e9eaeb;
+  --text-color-grey: #747b81;
+  --accent-color: #255cf5;
+}
+
 // SERVICES
-.services-section {
+.section-top {
   min-height: 560px;
-  max-width: 1440px;
+  max-width: 1920px;
   align-items: center;
   background: url('../img/bg/bg-services.png') top right no-repeat;
 
@@ -36,6 +49,95 @@
   &.service-forwarding {
     background: url('../img/bg/bg-service-forwarding.png') center right no-repeat;
   }
+
+  &.contact {
+    background: url('../img/bg/bg-contact.png') center right no-repeat;
+  }
+
+  &.help {
+    background: none;
+  }
+}
+
+.help {
+  h1 {
+    text-align: center;
+  }
+
+  p.text-slogan {
+    margin: 48px 0 32px;
+    text-align: center;
+  }
+
+  .btn-contact-us {
+    margin: 0 auto;
+  }
+}
+
+.topics-block {
+  gap: 24px;
+  list-style-image: none;
+
+  .topic {
+    padding: 12px 16px 0 72px;
+    width: 100%;
+    background: url(../img/list-style-star.svg) left top no-repeat;
+  }
+
+  .topic-btn {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 125%;
+    text-transform: uppercase;
+  }
+
+  .topic-date {
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 145%;
+    color: var(--text-color-grey);
+  }
+
+  .topic-btn-view {
+    display: block;
+  }
+}
+
+.news-block {
+  gap: 24px;
+  list-style-image: none;
+
+  .news {
+    padding: 8px 0;
+    width: 100%;
+  }
+
+  .news-btn {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 125%;
+    text-transform: uppercase;
+  }
+
+  .news-description {
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+  }
+
+  .news-date {
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 145%;
+    color: var(--text-color-grey);
+
+    span {
+      margin-left: 12px;
+    }
+  }
 }
 
 .services-title {
@@ -58,11 +160,13 @@
 }
 
 .service-details-left {
+  max-width: 1920px;
   padding: 40px 20px;
   background: url('../img/bg/bg-service-details.png') center right no-repeat;
 }
 
 .service-details-right {
+  max-width: 1920px;
   padding: 40px 20px;
   background: url('../img/bg/bg-service-details-second.png') center left no-repeat;
 }
@@ -202,30 +306,31 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-
-  p.notify-block-text {
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 134%;
-    color: var(--primary-color-500);
-  }
-
-  a.notify-block-btn {
-    display: none;
-    padding: 10px 24px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: var(--accent-color);
-    background-color: var(--text-color-light);
-  }
+}
+p.notify-block-text {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 134%;
+  color: var(--primary-color-500);
+}
+a.notify-block-btn {
+  display: none;
+  padding: 10px 24px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  background-color: var(--text-color-light);
+}
+a.btn-view-all {
+  display: block;
 }
 
 /* Large devices (desktops, less than 1200px) */
 @media screen and (max-width: 1200px) {
   // SERVICES
-  .services-section {
+  .section-top {
     min-height: auto;
     background: none;
 
@@ -236,7 +341,8 @@
     &.service-oversized,
     &.service-warehouse,
     &.service-customs,
-    &.service-forwarding {
+    &.service-forwarding,
+    &.contact {
       background: none;
     }
   }
@@ -351,15 +457,13 @@
 
   .notify-block {
     margin: 40px 120px 8px;
-
-    p.notify-block-text {
-      display: none;
-      font-size: 18px;
-    }
-
-    a.notify-block-btn {
-      display: flex;
-    }
+  }
+  p.notify-block-text {
+    display: none;
+    font-size: 18px;
+  }
+  a.notify-block-btn {
+    display: flex;
   }
 
   .viev-more-hidden {
@@ -443,13 +547,11 @@
 
   .notify-block {
     margin: 40px 32px 8px;
-
-    p.notify-block-text {
-      font-size: 14px;
-    }
-
-    a.notify-block-btn {
-      font-size: 14px;
-    }
+  }
+  p.notify-block-text {
+    font-size: 14px;
+  }
+  a.notify-block-btn {
+    font-size: 14px;
   }
 }

@@ -390,20 +390,43 @@ a:hover {
   margin-bottom: 0;
 }
 
+.badge-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  gap: 16px;
+}
+.badge-block .badge-block-btn {
+  padding: 8px 16px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 125%;
+  background-color: var(--primary-color-500);
+}
+.badge-block .badge-block-btn:hover {
+  background-color: var(--text-color-light);
+}
+
 /* WELCOME SECTION */
 .welcome-section {
-  max-width: 1440px;
+  max-width: 1920px;
   background: url("../img/bg/bg-welcome-section.png") center right no-repeat;
 }
-.welcome-section p.text-slogan {
+
+p.text-slogan {
   width: 100%;
   margin-top: 8px;
-  font-size: 20px;
   font-weight: 500;
+  font-size: 20px;
   letter-spacing: 2.6px;
   text-transform: uppercase;
 }
-.welcome-section a.btn-contact-us {
+
+a.btn-contact-us {
   margin-top: 56px;
   padding: 20px 40px;
   display: -webkit-box;
@@ -427,7 +450,7 @@ a:hover {
   -webkit-transition: color 0.5s, background-color 0.3s;
   transition: color 0.5s, background-color 0.3s;
 }
-.welcome-section a.btn-contact-us:hover {
+a.btn-contact-us:hover {
   cursor: pointer;
   color: var(--accent-color);
   background-color: var(--text-color-light);
@@ -1249,7 +1272,7 @@ footer p.copyright {
   }
 
   .welcome-section {
-    background-size: 50%;
+    background-size: 400px;
   }
   .welcome-section a.btn-contact-us {
     margin-top: 48px;
@@ -1547,11 +1570,12 @@ footer p.copyright {
     padding: 64px 0 0;
   }
 
-  .welcome-section p.text-slogan {
+  p.text-slogan {
     font-size: 14px;
     letter-spacing: 1.82px;
   }
-  .welcome-section a.btn-contact-us {
+
+  a.btn-contact-us {
     margin-top: 32px;
     padding: 10px 40px;
     min-height: 40px;

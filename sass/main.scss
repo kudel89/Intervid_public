@@ -329,41 +329,59 @@ a {
   }
 }
 
-/* WELCOME SECTION */
-.welcome-section {
-  max-width: 1440px;
-  background: url('../img/bg/bg-welcome-section.png') center right no-repeat;
+.badge-block {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 16px;
 
-  p.text-slogan {
-    width: 100%;
-    margin-top: 8px;
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 2.6px;
-    text-transform: uppercase;
-  }
-
-  a.btn-contact-us {
-    margin-top: 56px;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: var(--text-color-light);
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 16px;
-    text-transform: uppercase;
-    background-color: var(--accent-color);
-    transition-timing-function: ease;
-    transition: color 0.5s, background-color 0.3s;
+  .badge-block-btn {
+    padding: 8px 16px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 125%;
+    background-color: var(--primary-color-500);
 
     &:hover {
-      cursor: pointer;
-      color: var(--accent-color);
       background-color: var(--text-color-light);
     }
+  }
+}
+
+/* WELCOME SECTION */
+.welcome-section {
+  max-width: 1920px;
+  background: url('../img/bg/bg-welcome-section.png') center right no-repeat;
+}
+
+p.text-slogan {
+  width: 100%;
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 2.6px;
+  text-transform: uppercase;
+}
+
+a.btn-contact-us {
+  margin-top: 56px;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--text-color-light);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  background-color: var(--accent-color);
+  transition-timing-function: ease;
+  transition: color 0.5s, background-color 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    color: var(--accent-color);
+    background-color: var(--text-color-light);
   }
 }
 
@@ -1087,7 +1105,7 @@ footer {
   }
 
   .welcome-section {
-    background-size: 50%;
+    background-size: 400px;
 
     a.btn-contact-us {
       margin-top: 48px;
@@ -1416,19 +1434,17 @@ footer {
     padding: 64px 0 0;
   }
 
-  .welcome-section {
-    p.text-slogan {
-      font-size: 14px;
-      letter-spacing: 1.82px;
-    }
+  p.text-slogan {
+    font-size: 14px;
+    letter-spacing: 1.82px;
+  }
 
-    a.btn-contact-us {
-      margin-top: 32px;
-      padding: 10px 40px;
-      min-height: 40px;
-      font-size: 14px;
-      line-height: 20px;
-    }
+  a.btn-contact-us {
+    margin-top: 32px;
+    padding: 10px 40px;
+    min-height: 40px;
+    font-size: 14px;
+    line-height: 20px;
   }
 
   section {

@@ -57,3 +57,15 @@ fetch('./section-more-for-you.html')
       return (element.innerHTML = data)
     }
   })
+
+fetch('./section-faq.html')
+  .then((response) => {
+    return response.text()
+  })
+  .then((data) => {
+    /* Inner 'FAQ section */
+    const element = document.querySelector('.section-faq')
+    if (!!element) {
+      return (element.innerHTML = data)
+    }
+  })
