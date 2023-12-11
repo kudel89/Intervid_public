@@ -43,6 +43,9 @@
 .section-top.service-forwarding {
   background: url("../img/bg/bg-service-forwarding.png") center right no-repeat;
 }
+.section-top.about {
+  background: url("../img/bg/bg-about.png") center right no-repeat;
+}
 .section-top.contact {
   background: url("../img/bg/bg-contact.png") center right no-repeat;
 }
@@ -426,7 +429,7 @@ a.btn-view-all {
     min-height: auto;
     background: none;
   }
-  .section-top.service-shipping, .section-top.service-container, .section-top.service-international, .section-top.service-hazardous, .section-top.service-oversized, .section-top.service-warehouse, .section-top.service-customs, .section-top.service-forwarding, .section-top.contact {
+  .section-top.service-shipping, .section-top.service-container, .section-top.service-international, .section-top.service-hazardous, .section-top.service-oversized, .section-top.service-warehouse, .section-top.service-customs, .section-top.service-forwarding, .section-top.about, .section-top.contact {
     background: none;
   }
 

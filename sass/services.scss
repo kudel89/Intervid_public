@@ -50,6 +50,10 @@
     background: url('../img/bg/bg-service-forwarding.png') center right no-repeat;
   }
 
+  &.about {
+    background: url('../img/bg/bg-about.png') center right no-repeat;
+  }
+
   &.contact {
     background: url('../img/bg/bg-contact.png') center right no-repeat;
   }
@@ -436,6 +440,7 @@ a.btn-view-all {
     &.service-warehouse,
     &.service-customs,
     &.service-forwarding,
+    &.about,
     &.contact {
       background: none;
     }
