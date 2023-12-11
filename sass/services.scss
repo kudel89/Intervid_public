@@ -57,6 +57,10 @@
   &.help {
     background: none;
   }
+
+  &.jobs {
+    background: none;
+  }
 }
 
 .help {
@@ -71,6 +75,89 @@
 
   .btn-contact-us {
     margin: 0 auto;
+  }
+}
+
+.jobs {
+  h1 {
+    text-align: center;
+  }
+
+  p.text-slogan {
+    margin: 48px 0 32px;
+    text-align: center;
+  }
+
+  .jobs-btn-block {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .btn-contact-us {
+    margin: 0 16px;
+  }
+}
+
+.job-block {
+  margin-bottom: 40px;
+  padding: 40px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background-color: var(--primary-color-600);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.job-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 125%;
+  text-transform: uppercase;
+}
+
+ul.job-description {
+  margin-top: 24px;
+  list-style-type: disc;
+  list-style-position: inside;
+  gap: 32px;
+
+  li {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 145%;
+  }
+}
+
+.job-links {
+  display: flex;
+  flex-flow: column;
+  gap: 32px;
+}
+
+a.job-btn {
+  padding: 15px 40px;
+  min-height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: var(--text-color-light);
+  background-color: var(--accent-color);
+  transition-timing-function: ease;
+  transition: color 0.5s, background-color 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    color: var(--accent-color);
+    background-color: var(--text-color-light);
   }
 }
 
@@ -258,6 +345,10 @@
   flex-flow: row wrap;
   align-items: center;
 
+  &.requirements {
+    min-height: auto;
+  }
+
   .service-section-block-img-right,
   .service-section-block-img-left {
     display: none;
@@ -296,6 +387,9 @@
       margin-top: 8px;
       font-weight: 400;
       font-size: 22px;
+    }
+    &.offer-block {
+      background-color: var(--primary-color-900);
     }
   }
 }

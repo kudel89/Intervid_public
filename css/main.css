@@ -460,18 +460,21 @@ a.btn-contact-us:hover {
 .whoweare-section {
   margin-bottom: 40px;
 }
-.whoweare-section .advantages-block {
+
+.advantages-block {
   margin: 48px 0 0 0;
   padding: 40px;
   width: 100%;
   background-color: var(--primary-color-500);
 }
-.whoweare-section p.advantages-title {
+
+p.advantages-title {
   font-size: 48px;
   font-weight: 700;
   text-transform: uppercase;
 }
-.whoweare-section ul.advantages-list {
+
+ul.advantages-list {
   margin: 16px 0 0 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -483,7 +486,7 @@ a.btn-contact-us:hover {
   gap: 0;
   list-style-type: disc;
 }
-.whoweare-section ul.advantages-list li {
+ul.advantages-list li {
   width: 100%;
   font-size: 22px;
   line-height: 145%;
@@ -784,7 +787,8 @@ a.getonline-vibeo-btn:hover {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
 }
-.become-block .become-title {
+
+.job-btn-full {
   cursor: pointer;
   padding: 16px 0;
   width: 100%;
@@ -804,14 +808,15 @@ a.getonline-vibeo-btn:hover {
   list-style: none;
   border-bottom: 1px solid rgba(233, 234, 235, 0.2);
 }
-.become-block .become-title:hover {
+.job-btn-full:hover {
   color: var(--accent-color);
   border-bottom: 1px solid var(--accent-color);
 }
-.become-block .become-title:hover path {
+.job-btn-full:hover path {
   fill: #fff;
 }
-.become-block .become-btn {
+
+.become-btn {
   margin-top: 48px;
   padding: 15px 40px;
   min-height: 56px;
@@ -831,7 +836,7 @@ a.getonline-vibeo-btn:hover {
   text-transform: uppercase;
   background-color: var(--accent-color);
 }
-.become-block .become-btn:hover {
+.become-btn:hover {
   color: var(--accent-color);
   background-color: var(--text-color-light);
 }
@@ -1298,14 +1303,16 @@ footer p.copyright {
   }
 
   /* WHO WE ARE */
-  .whoweare-section .advantages-block {
+  .advantages-block {
     margin: 48px 0 0 120px;
     padding: 32px;
   }
-  .whoweare-section .advantages-block p.advantages-title {
+
+  p.advantages-title {
     font-size: 40px;
   }
-  .whoweare-section ul.advantages-list li {
+
+  ul.advantages-list li {
     font-size: 22px;
   }
 
@@ -1409,10 +1416,12 @@ footer p.copyright {
   .become-block {
     margin-top: 48px;
   }
-  .become-block .become-title {
+
+  .job-btn-full {
     font-size: 24px;
   }
-  .become-block .become-btn {
+
+  .become-btn {
     font-size: 20px;
   }
 
@@ -1654,15 +1663,16 @@ footer p.copyright {
   }
 
   /* BECOME */
-  .become-block .become-title {
+  .job-btn-full {
     padding: 12px 0;
     font-size: 20px;
   }
-  .become-block .become-title svg {
+  .job-btn-full svg {
     width: 31.248px;
     height: 22px;
   }
-  .become-block .become-btn {
+
+  .become-btn {
     margin-top: 32px;
     padding: 10px 15px;
     min-height: 40px;
@@ -1713,14 +1723,16 @@ footer p.copyright {
   }
 
   /* WHO WE ARE */
-  .whoweare-section .advantages-block {
+  .advantages-block {
     margin: 48px 0 0 60px;
     padding: 16px;
   }
-  .whoweare-section .advantages-block p.advantages-title {
+
+  p.advantages-title {
     font-size: 28px;
   }
-  .whoweare-section ul.advantages-list li {
+
+  ul.advantages-list li {
     font-size: 16px;
   }
 
