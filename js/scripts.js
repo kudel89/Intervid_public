@@ -69,3 +69,18 @@ fetch('./section-faq.html')
       return (element.innerHTML = data)
     }
   })
+
+/* SLIDER */
+let swiper = new Swiper('.mySwiper', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+})
