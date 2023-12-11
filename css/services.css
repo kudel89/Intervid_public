@@ -608,6 +608,37 @@ a.square-btn:hover {
     display: none;
   }
 }
+/* Medium devices (tablets, less than 992px) */
+@media screen and (max-width: 991.98px) {
+  /* ABOUT page */
+  .square-block {
+    padding: 0 120px;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .square svg {
+    height: auto;
+    width: 42px;
+  }
+
+  p.square-title {
+    margin: 16px 0 8px;
+    font-size: 22px;
+  }
+
+  p.square-text {
+    font-size: 18px;
+  }
+
+  a.square-btn {
+    padding: 15px 40px;
+    width: auto;
+    min-height: 56px;
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
 /* Small devices (landscape phones, less than 768px) */
 @media screen and (max-width: 767.98px) {
   .services-title {
@@ -679,5 +710,30 @@ a.square-btn:hover {
 
   a.notify-block-btn {
     font-size: 14px;
+  }
+
+  /* ABOUT page */
+  .square-block {
+    padding: 0 46px;
+  }
+
+  .square svg {
+    width: 32px;
+  }
+
+  p.square-title {
+    margin: 8px 0 8px;
+    font-size: 18px;
+  }
+
+  p.square-text {
+    font-size: 16px;
+  }
+
+  a.square-btn {
+    padding: 10px 40px;
+    min-height: 40px;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
