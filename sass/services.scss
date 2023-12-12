@@ -697,6 +697,35 @@ a.square-btn {
     font-size: 22px;
     line-height: 26px;
   }
+
+  .help {
+    p.text-slogan {
+      font-size: 20px;
+    }
+  }
+
+  /* TOPICS */
+  .topics-block {
+    .topic-btn {
+      font-size: 24px;
+    }
+    .topic-date {
+      font-size: 16px;
+    }
+  }
+
+  /* NEWS */
+  .news-block {
+    .news-btn {
+      font-size: 24px;
+    }
+    .news-description {
+      font-size: 18px;
+    }
+    .news-date {
+      font-size: 16px;
+    }
+  }
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -808,6 +837,40 @@ a.square-btn {
     min-height: 40px;
     font-size: 14px;
     line-height: 20px;
+  }
+
+  .help {
+    p.text-slogan {
+      margin: 8px 0 32px;
+      font-size: 16px;
+    }
+  }
+
+  /* TOPICS */
+  .topics-block {
+    .topic {
+      padding: 8px 0 0 46px;
+      background: url(../img/list-style-star-mini.svg) left top no-repeat;
+    }
+    .topic-btn {
+      font-size: 18px;
+    }
+    .topic-date {
+      font-size: 14px;
+    }
+  }
+
+  /* NEWS */
+  .news-block {
+    .news-btn {
+      font-size: 20px;
+    }
+    .news-description {
+      font-size: 16px;
+    }
+    .news-date {
+      font-size: 14px;
+    }
   }
 
   /* SLIDER */
