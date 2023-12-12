@@ -73,7 +73,7 @@ fetch('./section-faq.html')
 /* SLIDER */
 let swiper = new Swiper('.mySwiper', {
   slidesPerView: 1,
-  spaceBetween: 20,
+  spaceBetween: 0,
   loop: true,
   autoplay: {
     delay: 2500,
@@ -81,6 +81,10 @@ let swiper = new Swiper('.mySwiper', {
   },
   breakpoints: {
     768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1200: {
       slidesPerView: 3,
       spaceBetween: 30,
     },

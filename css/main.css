@@ -1290,6 +1290,7 @@ footer p.copyright {
     padding: 16px 0 0 0;
   }
   .description-block p.description-block-subtitle {
+    margin-bottom: 20px;
     font-size: 40px;
     line-height: 145%;
   }
