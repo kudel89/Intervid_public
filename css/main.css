@@ -239,6 +239,9 @@ header {
   font-size: 18px;
   text-align: center;
 }
+.sub-menu-cover ul.sub-menu li.sub-menu-item.active a {
+  color: var(--accent-color);
+}
 
 .dropdown:hover .sub-menu-cover {
   display: -webkit-box;

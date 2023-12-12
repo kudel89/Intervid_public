@@ -23,6 +23,13 @@ fetch('./header.html')
       hamburger.classList.remove('active')
       topnav.classList.remove('active')
     }
+
+    /* Added active class to the current page */
+    let currentURL = window.location.href
+    let page = currentURL.substr(currentURL.lastIndexOf('/') + 1)
+    page = page.split('.')[0]
+    let currentPageLink = document.getElementById('nav-' + page)
+    currentPageLink.classList.add('active')
   })
 
 fetch('./footer.html')
