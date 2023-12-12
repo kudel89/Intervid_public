@@ -698,9 +698,32 @@ a.square-btn {
     line-height: 26px;
   }
 
+  /* HELP CENTER page */
   .help {
     p.text-slogan {
       font-size: 20px;
+    }
+  }
+
+  /* JOBS page */
+  .jobs {
+    p.text-slogan {
+      font-size: 20px;
+    }
+  }
+
+  .job-block {
+    padding: 24px;
+  }
+
+  .job-title {
+    font-size: 40px;
+  }
+
+  ul.job-description {
+    li {
+      margin-top: 32px;
+      font-size: 18px;
     }
   }
 
@@ -839,11 +862,61 @@ a.square-btn {
     line-height: 20px;
   }
 
+  /* HELP CENTER page */
   .help {
     p.text-slogan {
       margin: 8px 0 32px;
       font-size: 16px;
     }
+  }
+
+  /* JOBS page */
+  .jobs {
+    p.text-slogan {
+      margin: 8px 0 32px;
+      font-size: 16px;
+    }
+  }
+
+  .job-block {
+    padding: 16px;
+  }
+
+  .job {
+    width: 100%;
+  }
+
+  .job-title {
+    font-size: 20px;
+  }
+
+  ul.job-description {
+    margin-top: 8px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 4px;
+
+    li {
+      width: 100%;
+      margin-top: 0;
+      font-size: 16px;
+    }
+  }
+
+  .job-links {
+    margin-top: 24px;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  a.job-btn {
+    padding: 10px 40px;
+    min-height: 40px;
+    width: auto;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   /* TOPICS */
