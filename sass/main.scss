@@ -80,6 +80,119 @@ header {
   z-index: 100;
 }
 
+main {
+  padding: 88px 0 0;
+  width: 100%;
+  display: flex;
+  flex: 1 1 100%;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.cover-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+section {
+  padding: 56px 20px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+h1 {
+  flex: 1 1 100%;
+  font-weight: 700;
+  font-size: 128px;
+  line-height: 113px;
+  color: var(--text-color);
+
+  span {
+    color: var(--primary-color-500);
+  }
+}
+
+h2 {
+  margin-bottom: 32px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 88px;
+  line-height: 88px;
+  color: var(--text-color);
+  text-transform: uppercase;
+
+  span {
+    color: var(--primary-color-500);
+  }
+}
+
+h3 {
+  width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+}
+
+a {
+  color: var(--text-color-light);
+  text-decoration: none;
+  transition-timing-function: ease;
+  transition: color 0.3s;
+
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+/* BUTTON PRIMARY */
+a.btn-primary {
+  min-height: 56px;
+  padding: 16px 40px 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: var(--text-color-light);
+  background-color: var(--accent-color);
+  transition: color 0.5s ease, background-color 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+    color: var(--accent-color);
+    background-color: var(--text-color-light);
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+
+  &.square {
+    width: 100%;
+    font-size: 28px;
+    line-height: 125%;
+  }
+}
+
 .nav-logo {
   margin: 16px 125px 16px 8px;
 }
@@ -226,86 +339,6 @@ header {
   display: flex;
 }
 
-main {
-  padding: 88px 0 0;
-  width: 100%;
-  display: flex;
-  flex: 1 1 100%;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-
-.cover-wrapper {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  width: 100%;
-}
-
-.wrapper {
-  max-width: 1200px;
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-}
-
-section {
-  padding: 56px 20px;
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-
-h1 {
-  flex: 1 1 100%;
-  font-weight: 700;
-  font-size: 128px;
-  line-height: 113px;
-  color: var(--text-color);
-
-  span {
-    color: var(--primary-color-500);
-  }
-}
-
-h2 {
-  margin-bottom: 32px;
-  width: 100%;
-  font-weight: 700;
-  font-size: 88px;
-  line-height: 88px;
-  color: var(--text-color);
-  text-transform: uppercase;
-
-  span {
-    color: var(--primary-color-500);
-  }
-}
-
-h3 {
-  width: 100%;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-flow: row wrap;
-  list-style: none;
-}
-
-a {
-  color: var(--text-color-light);
-  text-decoration: none;
-  transition-timing-function: ease;
-  transition: color 0.3s;
-
-  &:hover {
-    color: var(--accent-color);
-  }
-}
-
 .description-block {
   padding-left: 410px;
   width: 100%;
@@ -370,25 +403,6 @@ p.text-slogan {
 
 a.btn-contact-us {
   margin-top: 56px;
-  padding: 15px 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: var(--text-color-light);
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 26px;
-  text-transform: uppercase;
-  background-color: var(--accent-color);
-  transition-timing-function: ease;
-  transition: color 0.5s, background-color 0.3s;
-
-  &:hover {
-    cursor: pointer;
-    color: var(--accent-color);
-    background-color: var(--text-color-light);
-  }
 }
 
 /* WHO WE ARE */
@@ -483,30 +497,11 @@ ul.advantages-list {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.whatwedo-grid-contact {
-  display: none;
+.grid-item-services {
+  width: 100%;
+  display: flex;
   justify-content: center;
   flex: 1 1 100%;
-
-  a.whatwedo-grid-contact-btn {
-    display: flex;
-    width: 345px;
-    min-height: 56px;
-    padding: 15px 40px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 26px;
-    text-transform: uppercase;
-    background-color: var(--accent-color);
-
-    &:hover {
-      color: #255cf5;
-      background-color: var(--text-color-light);
-    }
-  }
 }
 
 .whatwedo-grid-item {
@@ -595,29 +590,6 @@ ul.advantages-list {
 .getonline-video {
   width: 100%;
   height: 336px;
-}
-
-a.getonline-vibeo-btn {
-  padding: 15px 40px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: var(--text-color-light);
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 26px;
-  text-transform: uppercase;
-  background-color: var(--accent-color);
-  transition-timing-function: ease;
-  transition: color 0.5s, background-color 0.3s;
-
-  &:hover {
-    cursor: pointer;
-    color: var(--accent-color);
-    background-color: var(--text-color-light);
-  }
 }
 
 /* QUOTE SECTION */
@@ -711,22 +683,6 @@ a.getonline-vibeo-btn {
 
 .become-btn {
   margin-top: 48px;
-  padding: 15px 40px;
-  min-height: 56px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 26px;
-  text-transform: uppercase;
-  background-color: var(--accent-color);
-
-  &:hover {
-    color: var(--accent-color);
-    background-color: var(--text-color-light);
-  }
 }
 
 /* FAQ */
@@ -851,24 +807,7 @@ a.contact-block-mail {
 }
 
 a.contact-block-button {
-  padding: 15px 40px;
   width: 100%;
-  min-height: 56px;
-  display: flex;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 26px;
-  line-height: normal;
-  text-transform: uppercase;
-  background-color: var(--accent-color);
-
-  &:hover {
-    color: var(--accent-color);
-    background-color: var(--text-color-light);
-    transition-timing-function: ease;
-    transition: color 0.3s, background-color 0.2s;
-  }
 }
 
 /* FOOTER */
@@ -1143,7 +1082,6 @@ footer {
   }
 
   /* WHO WE ARE */
-
   .advantages-block {
     margin: 48px 0 0 120px;
     padding: 32px;
@@ -1156,24 +1094,6 @@ footer {
   ul.advantages-list {
     li {
       font-size: 22px;
-    }
-  }
-
-  /* WHAT WE DO */
-  .whatwedo-grid-item {
-    &:nth-child(3) {
-      background-color: var(--primary-color-700);
-    }
-
-    &:nth-child(4),
-    &:nth-child(5),
-    &:nth-child(8) {
-      background-color: var(--primary-color-800);
-    }
-
-    &:nth-child(6),
-    &:nth-child(7) {
-      background-color: var(--primary-color-900);
     }
   }
 
@@ -1209,28 +1129,12 @@ footer {
   /* WHAT WE DO */
   .whatwedo-grid {
     margin: 48px 0;
-    grid-template-columns: 345px 345px;
+    grid-template-columns: 300px 300px 300px;
     justify-content: center;
   }
 
-  .whatwedo-grid-contact {
-    display: flex;
-  }
-
   .whatwedo-grid-item {
-    height: 345px;
-
-    &:nth-child(9) {
-      display: none;
-    }
-
-    p.whatwedo-title {
-      font-size: 24px;
-    }
-
-    p.whatwedo-text {
-      font-size: 20px;
-    }
+    height: 300px;
   }
 
   /* GET ONLINE */
@@ -1270,10 +1174,6 @@ footer {
     font-size: 24px;
   }
 
-  .become-btn {
-    font-size: 20px;
-  }
-
   /* FAQ */
   .faq-block {
     details > summary {
@@ -1308,10 +1208,6 @@ footer {
     font-size: 20px;
   }
 
-  a.contact-block-button {
-    font-size: 20px;
-  }
-
   footer {
     .footer-logo {
       margin: 16px 16px 16px 0;
@@ -1324,6 +1220,20 @@ footer {
 
 /* Medium devices (tablets, less than 992px) */
 @media screen and (max-width: 991.98px) {
+  /* BUTTON PRIMARY */
+  a.btn-primary {
+    min-height: 48px;
+    padding: 15px 30px 13px;
+    font-size: 18px;
+    line-height: 20px;
+
+    &.square {
+      width: auto;
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+
   .welcome-section {
     background: none;
   }
@@ -1357,6 +1267,43 @@ footer {
           font-size: 16px;
         }
       }
+    }
+  }
+
+  /* WHAT WE DO */
+  .whatwedo-grid {
+    grid-template-columns: 345px 345px;
+  }
+
+  .grid-item-services {
+    margin-top: 48px;
+    grid-column: span 2;
+  }
+
+  .whatwedo-grid-item {
+    height: 345px;
+
+    &:nth-child(3) {
+      background-color: var(--primary-color-700);
+    }
+
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(8) {
+      background-color: var(--primary-color-800);
+    }
+
+    &:nth-child(6),
+    &:nth-child(7) {
+      background-color: var(--primary-color-900);
+    }
+
+    p.whatwedo-title {
+      font-size: 24px;
+    }
+
+    p.whatwedo-text {
+      font-size: 20px;
     }
   }
 
@@ -1397,6 +1344,17 @@ footer {
 
   header {
     min-height: 64px;
+  }
+
+  /* BUTTON PRIMARY */
+  a.btn-primary {
+    min-height: 40px;
+    padding: 11px 20px 9px;
+    font-size: 14px;
+
+    &.square {
+      font-size: 14px;
+    }
   }
 
   .navbar {
@@ -1446,10 +1404,6 @@ footer {
 
   a.btn-contact-us {
     margin-top: 32px;
-    padding: 10px 40px;
-    min-height: 40px;
-    font-size: 14px;
-    line-height: 20px;
   }
 
   section {
@@ -1460,16 +1414,6 @@ footer {
   .whatwedo-grid {
     margin: 32px 0;
     grid-template-columns: 172px 172px;
-  }
-
-  .whatwedo-grid-contact {
-    a.whatwedo-grid-contact-btn {
-      width: 164px;
-      min-height: 40px;
-      padding: 10px 15px;
-      font-size: 14px;
-      line-height: 20px;
-    }
   }
 
   .whatwedo-grid-item {
@@ -1485,6 +1429,10 @@ footer {
     }
   }
 
+  .grid-item-services {
+    margin-top: 32px;
+  }
+
   /* GET ONLINE */
   .getonline-block {
     margin: 32px 0;
@@ -1495,13 +1443,6 @@ footer {
         font-size: 16px;
       }
     }
-  }
-
-  a.getonline-vibeo-btn {
-    min-height: 40px;
-    padding: 10px 15px;
-    font-size: 16px;
-    line-height: 20px;
   }
 
   /* QUOTE */
@@ -1549,10 +1490,6 @@ footer {
 
   .become-btn {
     margin-top: 32px;
-    padding: 10px 15px;
-    min-height: 40px;
-    font-size: 14px;
-    line-height: 20px;
   }
 
   /* BADGE BLOCK */
@@ -1640,13 +1577,6 @@ footer {
 
   a.contact-block-mail {
     font-size: 16px;
-  }
-
-  a.contact-block-button {
-    min-height: 40px;
-    padding: 10px 15px;
-    font-size: 16px;
-    line-height: 20px;
   }
 
   footer {
