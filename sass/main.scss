@@ -1498,69 +1498,69 @@ ul.footer-menu {
     justify-content: flex-start;
     gap: 0;
   }
-}
 
-li.footer-menu-item {
-  @include sm {
-    flex: 0 0 50%;
-    align-items: center;
+  li.menu-item {
+    @include sm {
+      flex: 0 0 50%;
+      align-items: center;
 
-    &:nth-child(1) {
-      order: 1;
-    }
-    &:nth-child(2) {
-      order: 3;
-    }
-    &:nth-child(3) {
-      order: 5;
-    }
-    &:nth-child(4) {
-      order: 2;
-    }
-    &:nth-child(5) {
-      order: 4;
-    }
-  }
-
-  a {
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    color: var(--text-color-light);
-    text-align: center;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    text-decoration: none;
-    transition-timing-function: ease;
-    transition: color 0.3s, background-color 0.2s;
-
-    &:hover {
-      cursor: pointer;
-      color: var(--accent-color);
-    }
-
-    &.social-item {
-      display: none;
-
-      @include sm {
-        display: flex;
-        order: 6;
-
-        a {
-          margin: 0;
-          height: 24px;
-
-          img {
-            height: 24px;
-          }
-        }
+      &:nth-child(1) {
+        order: 1;
+      }
+      &:nth-child(2) {
+        order: 3;
+      }
+      &:nth-child(3) {
+        order: 5;
+      }
+      &:nth-child(4) {
+        order: 2;
+      }
+      &:nth-child(5) {
+        order: 4;
       }
     }
 
-    @include sm {
-      margin: 12px 12px 12px 0;
-      padding: 0;
+    a {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      color: var(--text-color-light);
+      text-align: center;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      text-decoration: none;
+      transition-timing-function: ease;
+      transition: color 0.3s, background-color 0.2s;
+
+      &:hover {
+        cursor: pointer;
+        color: var(--accent-color);
+      }
+
+      &.social-item {
+        display: none;
+
+        @include sm {
+          display: flex;
+          order: 6;
+
+          a {
+            margin: 0;
+            height: 24px;
+
+            img {
+              height: 24px;
+            }
+          }
+        }
+      }
+
+      @include sm {
+        margin: 12px 12px 12px 0;
+        padding: 0;
+      }
     }
   }
 }
