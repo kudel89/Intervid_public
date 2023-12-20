@@ -123,10 +123,10 @@ html {
 body {
   min-height: 100%;
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr auto;
+  display: flex;
+  flex-flow: row wrap;
   justify-content: center;
+  align-content: space-between;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", system-ui, sans-serif;
   font-weight: normal;
   font-style: normal;
