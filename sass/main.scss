@@ -1588,6 +1588,7 @@ li.footer-menu-item {
   }
 
   &.article {
+    margin-bottom: 24px;
     width: 100%;
 
     @include lg {
@@ -1595,6 +1596,7 @@ li.footer-menu-item {
     }
 
     @include sm {
+      margin: 0 0 8px;
       display: flex;
     }
   }

@@ -1648,6 +1648,7 @@ li.footer-menu-item a.social-item {
   }
 }
 .social-block.article {
+  margin-bottom: 24px;
   width: 100%;
 }
 @media (max-width: 1199.98px) {
@@ -1657,6 +1658,7 @@ li.footer-menu-item a.social-item {
 }
 @media (max-width: 767.98px) {
   .social-block.article {
+    margin: 0 0 8px;
     display: flex;
   }
 }
