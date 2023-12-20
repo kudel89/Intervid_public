@@ -1732,6 +1732,10 @@ p.copyright {
 }
 
 .job {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+
   @include sm {
     width: 100%;
   }
@@ -1775,13 +1779,14 @@ p.copyright {
 }
 
 ul.job-description {
-  margin-top: 24px;
+  margin-bottom: 10px;
   list-style-type: disc;
   list-style-position: inside;
   gap: 32px;
 
   @include sm {
     margin-top: 8px;
+    margin-bottom: 0;
     display: flex;
     flex-flow: row wrap;
     gap: 4px;
