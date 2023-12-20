@@ -667,6 +667,7 @@ a.btn-primary {
 }
 
 .badge-block {
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
   gap: 16px;
@@ -1585,6 +1586,18 @@ li.footer-menu-item {
   @include sm {
     display: none;
   }
+
+  &.article {
+    width: 100%;
+
+    @include lg {
+      margin: 0;
+    }
+
+    @include sm {
+      display: flex;
+    }
+  }
 }
 
 .social-item {
@@ -1702,6 +1715,79 @@ p.copyright {
 
   .btn-contact-us {
     margin: 0 auto;
+  }
+}
+
+/* HELP ARTICLE */
+.section-article-top {
+  @include lg {
+    padding: 56px 40px 0;
+  }
+
+  @include sm {
+    padding: 28px 16px 0;
+  }
+}
+
+.section-article {
+  @include lg {
+    padding: 0 40px 56px;
+  }
+
+  @include sm {
+    padding: 0 16px 28px;
+  }
+}
+
+p.article-title {
+  margin: 60px 0 0;
+  width: 100%;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 125%;
+  text-align: center;
+
+  @include lg {
+    margin: 0;
+    font-size: 48px;
+  }
+
+  @include md {
+    font-size: 36px;
+  }
+
+  @include sm {
+    font-size: 24px;
+  }
+}
+
+p.article-subtitle {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+
+  @include md {
+    font-size: 24px;
+  }
+
+  @include sm {
+    font-size: 20px;
+  }
+}
+
+p.article-text {
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 145%;
+
+  @include md {
+    font-size: 20px;
+  }
+
+  @include sm {
+    font-size: 16px;
   }
 }
 

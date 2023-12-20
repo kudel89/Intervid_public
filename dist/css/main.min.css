@@ -690,6 +690,7 @@ a.btn-primary.square {
 }
 
 .badge-block {
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
   gap: 16px;
@@ -1646,6 +1647,19 @@ li.footer-menu-item a.social-item {
     display: none;
   }
 }
+.social-block.article {
+  width: 100%;
+}
+@media (max-width: 1199.98px) {
+  .social-block.article {
+    margin: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .social-block.article {
+    display: flex;
+  }
+}
 
 .social-item {
   display: none;
@@ -1740,6 +1754,88 @@ p.copyright {
 }
 .help .btn-contact-us {
   margin: 0 auto;
+}
+
+/* HELP ARTICLE */
+@media (max-width: 1199.98px) {
+  .section-article-top {
+    padding: 56px 40px 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .section-article-top {
+    padding: 28px 16px 0;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .section-article {
+    padding: 0 40px 56px;
+  }
+}
+@media (max-width: 767.98px) {
+  .section-article {
+    padding: 0 16px 28px;
+  }
+}
+
+p.article-title {
+  margin: 60px 0 0;
+  width: 100%;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 125%;
+  text-align: center;
+}
+@media (max-width: 1199.98px) {
+  p.article-title {
+    margin: 0;
+    font-size: 48px;
+  }
+}
+@media (max-width: 991.98px) {
+  p.article-title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 767.98px) {
+  p.article-title {
+    font-size: 24px;
+  }
+}
+
+p.article-subtitle {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+@media (max-width: 991.98px) {
+  p.article-subtitle {
+    font-size: 24px;
+  }
+}
+@media (max-width: 767.98px) {
+  p.article-subtitle {
+    font-size: 20px;
+  }
+}
+
+p.article-text {
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 145%;
+}
+@media (max-width: 991.98px) {
+  p.article-text {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  p.article-text {
+    font-size: 16px;
+  }
 }
 
 /* JOBS page */
