@@ -292,9 +292,21 @@ a.btn-primary {
   font-weight: 500;
   font-size: 18px;
   text-transform: uppercase;
+  color: var(--text-color-light);
+  background: transparent;
+  border: none;
+  outline: none;
 
   @include lg {
     display: none;
+  }
+
+  option {
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--text-color-light);
+    background: var(--background-dark);
   }
 }
 

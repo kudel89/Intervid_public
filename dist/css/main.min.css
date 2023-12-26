@@ -346,11 +346,22 @@ a.btn-primary.square {
   font-weight: 500;
   font-size: 18px;
   text-transform: uppercase;
+  color: var(--text-color-light);
+  background: transparent;
+  border: none;
+  outline: none;
 }
 @media (max-width: 1199.98px) {
   .toggle-lang {
     display: none;
   }
+}
+.toggle-lang option {
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: var(--text-color-light);
+  background: var(--background-dark);
 }
 
 .toggle-lang-mobile {
@@ -1564,29 +1575,28 @@ ul.footer-menu {
     gap: 0;
   }
 }
-
 @media (max-width: 767.98px) {
-  li.footer-menu-item {
+  ul.footer-menu li.menu-item {
     flex: 0 0 50%;
     align-items: center;
   }
-  li.footer-menu-item:nth-child(1) {
+  ul.footer-menu li.menu-item:nth-child(1) {
     order: 1;
   }
-  li.footer-menu-item:nth-child(2) {
+  ul.footer-menu li.menu-item:nth-child(2) {
     order: 3;
   }
-  li.footer-menu-item:nth-child(3) {
+  ul.footer-menu li.menu-item:nth-child(3) {
     order: 5;
   }
-  li.footer-menu-item:nth-child(4) {
+  ul.footer-menu li.menu-item:nth-child(4) {
     order: 2;
   }
-  li.footer-menu-item:nth-child(5) {
+  ul.footer-menu li.menu-item:nth-child(5) {
     order: 4;
   }
 }
-li.footer-menu-item a {
+ul.footer-menu li.menu-item a {
   padding: 10px;
   display: flex;
   align-items: center;
@@ -1599,28 +1609,28 @@ li.footer-menu-item a {
   transition-timing-function: ease;
   transition: color 0.3s, background-color 0.2s;
 }
-li.footer-menu-item a:hover {
+ul.footer-menu li.menu-item a:hover {
   cursor: pointer;
   color: var(--accent-color);
 }
-li.footer-menu-item a.social-item {
+ul.footer-menu li.menu-item a.social-item {
   display: none;
 }
 @media (max-width: 767.98px) {
-  li.footer-menu-item a.social-item {
+  ul.footer-menu li.menu-item a.social-item {
     display: flex;
     order: 6;
   }
-  li.footer-menu-item a.social-item a {
+  ul.footer-menu li.menu-item a.social-item a {
     margin: 0;
     height: 24px;
   }
-  li.footer-menu-item a.social-item a img {
+  ul.footer-menu li.menu-item a.social-item a img {
     height: 24px;
   }
 }
 @media (max-width: 767.98px) {
-  li.footer-menu-item a {
+  ul.footer-menu li.menu-item a {
     margin: 12px 12px 12px 0;
     padding: 0;
   }
